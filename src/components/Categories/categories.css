@@ -1,0 +1,30 @@
+
+.container-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.categories-list {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+
+}
+
+.categories-list li {
+    list-style: none;
+    border: 3px solid #0a0909;
+    text-align: center;
+    background-color: #90bd94;
+    color: #0a0909;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.categories-list li:hover {
+    background-color: #0a0909;
+    color: #90bd94;
+}
