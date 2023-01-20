@@ -2,7 +2,9 @@ import React from 'react'
 
 const Sports = () => {
   return (
-    <div>Sports</div>
+    <div>
+      <h1>Sports Section</h1>
+    </div>
   )
 }
 

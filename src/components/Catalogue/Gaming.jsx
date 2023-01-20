@@ -2,7 +2,9 @@ import React from 'react'
 
 const Gaming = () => {
   return (
-    <div>Gaming</div>
+    <div>
+      <h1>Gaming Section</h1>
+    </div>
   )
 }
 

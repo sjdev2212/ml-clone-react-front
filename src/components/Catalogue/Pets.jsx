@@ -2,7 +2,9 @@ import React from 'react'
 
 const Pets = () => {
   return (
-    <div>Pets</div>
+    <div>
+      <h1>Pets Section</h1>
+    </div>
   )
 }
 

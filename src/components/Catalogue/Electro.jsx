@@ -2,7 +2,9 @@ import React from 'react'
 
 const Electro = () => {
   return (
-    <div>Electro</div>
+    <div>
+      <h1>Electro Section</h1>
+    </div>
   )
 }
 

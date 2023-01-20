@@ -2,7 +2,9 @@ import React from 'react'
 
 const Intruments = () => {
   return (
-    <div>Intruments</div>
+    <div>
+      <h1>Instruments Section</h1>
+    </div>
   )
 }
 
