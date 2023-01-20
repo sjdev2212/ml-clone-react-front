@@ -1,22 +1,47 @@
 import React from 'react'
 import './categories.css'
-import { UilStreering } from '@iconscout/react-unicons'
+import { UilStreering, UilBasketball } from '@iconscout/react-unicons'
 
 const Categories = () => {
   return (
     <section className="container-list">
       <ul className="categories-list">
-        <li>Sports & Fitnes</li>
-        <li>Cars
-          {<UilStreering size="50" color="#61DAFB"/>}
+        <li>
+          <p>Sports & Fitnes</p>
+          {<UilBasketball size="60"/>}
+        </li>
+        <li>
+          <p>Cars</p>
+          {<UilStreering size="60"/>}
          </li>
-        <li>Clothing</li>
-        <li>Videogames</li>
-        <li>Musical Istruments</li>
-        <li>Home appliances</li>
-        <li>Cell phones</li>
-        <li>Electronics</li>
-        <li>Pets</li>
+        <li>
+        <p>Clothing</p>
+        {<UilStreering size="60"/>}
+        </li>
+        <li>
+          <p>Videogames</p>
+        {<UilStreering size="60"/>}
+        </li>
+        <li>
+          <p>Musical Istruments</p>
+        {<UilStreering size="60"/>}
+        </li>
+        <li>
+          <p>Home & Garden</p>
+        {<UilStreering size="60"/>}
+        </li>
+        <li>
+          <p>Cell phones</p>
+        {<UilStreering size="60"/>}
+        </li>
+        <li>
+          <p>Electronics</p>
+        {<UilStreering size="60"/>}
+        </li>
+        <li>
+          <p>Pets</p>
+        {<UilStreering size="60"/>}
+        </li>
       </ul>
     </section>
   )

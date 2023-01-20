@@ -22,9 +22,12 @@
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
+    width: 18rem;
 
 }
+
 .categories-list li:hover {
     background-color: #0a0909;
     color: #90bd94;
+
 }
