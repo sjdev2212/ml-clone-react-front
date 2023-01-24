@@ -1,20 +1,74 @@
+
+.container { 
+  min-height: 60vw;
+}
 .gaming-list {
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(247, 237, 237, 0.171);
-  width: 70%;
-  min-height: 100vh;
+display: flex;
+flex-direction: column;
+border: 2px solid black;
+width: 78%;
+margin: 0 auto;
+}
+
+.group {
+  display: grid;
+  grid-template-columns:1fr 2fr;
+}
+.group img {
+  width: 30vw;
+  height:31vw;
+  border-radius: 20px;
+  margin: 0 10px;
+  box-shadow: 1px 1px 1px 1px rgb(32, 30, 30);
+}
+.add-cart{ 
+  background-color: #f0f0f0;
   border: 1px solid black;
   border-radius: 20px;
   box-shadow: 2px 2px 2px 2px black;
-}
-.gaming-list img {
-  width: 30vw;
-  height: 30vw;
-  object-fit: cover;
-  border-radius: 20px;
   margin: 0 10px;
-  box-shadow: 2px 2px 2px 2px black;
+  width: 11vw;
+  height: 4vw;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+
+}
+.add-cart:hover { 
+  background-color: #5e5b5b;
+  color: white;
+}
+.sub-group {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 0 10px;
+}
+
+.desc{
+
+
+}
+.price{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5e5b5b;
+  margin: 15px 10px;
+}
+
+.stock{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #5e5b5b;
+  margin: 15px 10px;
+}
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+
+ 
 }

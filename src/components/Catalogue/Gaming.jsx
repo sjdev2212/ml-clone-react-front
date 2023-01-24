@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ReactLoading from 'react-loading'
+import ClampLines from 'react-clamp-lines'
 import axios from 'axios'
 import './gaming.css'
-/* import xbox from '../../assets/images/xbox.jpg'
-import combo from '../../assets/images/combo.jpg' */
 
 const Gaming = () => {
   const [items, setItems] = useState([])
@@ -19,30 +18,40 @@ const Gaming = () => {
   }
 
   useEffect(() => {
-    console.log(loading)
     getItems()
   }, [])
-  console.log(loading)
 
   return (
-    <div>
-      <div>
-
-      <h1>Gaming Section</h1>
-      {loading && <ReactLoading type='spinningBubbles' color='green' />}
+    <div className="container">
+      <div className="loader">
+        <h1>Gaming Section</h1>
+        {loading && (<p>Loading...<ReactLoading type="spinningBubbles" color="green" /> </p>) }
       </div>
 
-      <section className='gaming-list'>
-        {items.map(item => (
-    <div key={item.id}>
-      <h2>{item.name}</h2>
-      <p>{item.description}</p>
-      <p>Us$: {item.price}</p>
-      <img src={item.image} alt={item.name} />
-    </div>
+      <section>
+        {items.map((item) => (
+          <div className="gaming-list" key={item.id}>
+            <div className="group">
+              <div>
+                <img src={item.image} alt={item.name} />
+              </div>
+              <div className="sub-group">
+                <h4 className="title">{item.name}</h4>
+                <p className="price">Us$: {item.price}</p>
+                <ClampLines
+                  text={item.description}
+                  id="default"
+                  lines={1}
+                  className="desc"
+                />
+                <p className="stock">In Stock: 0</p>
+                <button className="add-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
         ))}
       </section>
-      <Link to='/'>Go back</Link>
+      <Link to="/">Go back</Link>
     </div>
   )
 }
