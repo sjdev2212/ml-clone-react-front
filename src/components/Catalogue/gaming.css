@@ -2,67 +2,9 @@
 .container { 
   min-height: 60vw;
 }
-.gaming-list {
-display: flex;
-flex-direction: column;
-border: 2px solid black;
-width: 78%;
-margin: 0 auto;
-}
-
-.group {
-  display: grid;
-  grid-template-columns:1fr 2fr;
-}
-.group img {
-  width: 30vw;
-  height:31vw;
-  border-radius: 20px;
-  margin: 0 10px;
-  box-shadow: 1px 1px 1px 1px rgb(32, 30, 30);
-}
-.add-cart{ 
-  background-color: #f0f0f0;
-  border: 1px solid black;
-  border-radius: 20px;
-  box-shadow: 2px 2px 2px 2px black;
-  margin: 0 10px;
-  width: 11vw;
-  height: 4vw;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: black;
-  cursor: pointer;
-
-}
-.add-cart:hover { 
-  background-color: #5e5b5b;
-  color: white;
-}
-.sub-group {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  margin: 0 10px;
-}
-
-.desc{
 
 
-}
-.price{
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #5e5b5b;
-  margin: 15px 10px;
-}
 
-.stock{
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #5e5b5b;
-  margin: 15px 10px;
-}
 .loader{
   display: flex;
   justify-content: center;
@@ -71,4 +13,40 @@ margin: 0 auto;
   font-weight: bold;
 
  
+}
+.box-group {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1vw;
+
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 22vw;
+  background-color: rgba(17, 170, 17, 0.658);
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.box img {
+  width: 13vw;
+  height: 14vw;
+  margin: 0.5vw;
+  align-self: center;
+ 
+}
+.box h3 {
+  font-size: 1.1vw;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5vw;
+  max-height: 2vw;
+}
+.box:hover {
+  background-color: rgba(17, 170, 17, 0.658);
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 10px rgba(17, 170, 17, 0.658);
 }
