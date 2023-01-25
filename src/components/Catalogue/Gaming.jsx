@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ReactLoading from 'react-loading'
-import ClampLines from 'react-clamp-lines'
 import axios from 'axios'
 import './gaming.css'
 
@@ -16,7 +15,7 @@ const Gaming = () => {
       setLoading(false)
     }, 2000)
   }
-
+  console.log(items)
   useEffect(() => {
     getItems()
   }, [])
@@ -28,28 +27,17 @@ const Gaming = () => {
         {loading && (<p>Loading...<ReactLoading type="spinningBubbles" color="green" /> </p>) }
       </div>
 
-      <section>
-        {items.map((item) => (
-          <div className="gaming-list" key={item.id}>
-            <div className="group">
-              <div>
-                <img src={item.image} alt={item.name} />
-              </div>
-              <div className="sub-group">
-                <h4 className="title">{item.name}</h4>
-                <p className="price">Us$: {item.price}</p>
-                <ClampLines
-                  text={item.description}
-                  id="default"
-                  lines={1}
-                  className="desc"
-                />
-                <p className="stock">In Stock: 0</p>
-                <button className="add-cart">Add to cart</button>
-              </div>
+      <section className="box-group">
+      {items.map((item) => (
+
+            <div key={item.id} className='box'>
+         <img src={item.image} alt="" />
+            <h3>{item.shortdesc}</h3>
+          <p >US$: {item.price}</p>
             </div>
-          </div>
-        ))}
+
+      )) }
+
       </section>
       <Link to="/">Go back</Link>
     </div>
