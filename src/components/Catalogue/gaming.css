@@ -1,0 +1,52 @@
+
+.container { 
+  min-height: 60vw;
+}
+
+
+
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+
+ 
+}
+.box-group {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1vw;
+
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 22vw;
+  background-color: rgba(17, 170, 17, 0.658);
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.box img {
+  width: 13vw;
+  height: 14vw;
+  margin: 0.5vw;
+  align-self: center;
+ 
+}
+.box h3 {
+  font-size: 1.1vw;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5vw;
+  max-height: 2vw;
+}
+.box:hover {
+  background-color: rgba(17, 170, 17, 0.658);
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 10px rgba(17, 170, 17, 0.658);
+}
