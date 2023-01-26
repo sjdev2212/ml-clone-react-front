@@ -15,6 +15,7 @@ import Electro from './components/Catalogue/Electro'
 import Clothing from './components/Catalogue/Clothing'
 import Cellphones from './components/Catalogue/Cellphones'
 import Cars from './components/Catalogue/Cars'
+import Detail from './components/Catalogue/Detail'
 
 function App () {
   return (
@@ -35,6 +36,7 @@ function App () {
 <Route path="/clothes" element={<Clothing/>} />
 <Route path="/cells" element={<Cellphones/>} />
 <Route path="/cars" element={<Cars/>} />
+<Route path="/details/:id" element={<Detail/>} />
 
    </Routes>
     </div>

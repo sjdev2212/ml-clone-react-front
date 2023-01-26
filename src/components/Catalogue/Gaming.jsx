@@ -13,13 +13,15 @@ const Gaming = () => {
     setTimeout(() => {
       setItems(response.data)
       setLoading(false)
-    }, 2000)
+    }, 1000)
   }
   console.log(items)
   useEffect(() => {
     getItems()
   }, [])
-
+  /*  const handleonClick = (id) => {
+    <Navigate to="/details" />
+  } */
   return (
     <div className="container">
       <div className="loader">
@@ -29,12 +31,13 @@ const Gaming = () => {
 
       <section className="box-group">
       {items.map((item) => (
-
+<Link to={`/details/${item.id}`} key={item.id} className='box'>
             <div key={item.id} className='box'>
          <img src={item.image} alt="" />
             <h3>{item.shortdesc}</h3>
           <p >US$: {item.price}</p>
             </div>
+          </Link>
 
       )) }
 
