@@ -10,18 +10,18 @@ const Gaming = () => {
 
   const getItems = async () => {
     const response = await axios.get('http://127.0.0.1:8000/api/v1/gaming')
-    setTimeout(() => {
+    try {
       setItems(response.data)
       setLoading(false)
-    }, 1000)
+    } catch (error) {
+      alert(error.message)
+    }
   }
-  console.log(items)
+
   useEffect(() => {
     getItems()
   }, [])
-  /*  const handleonClick = (id) => {
-    <Navigate to="/details" />
-  } */
+
   return (
     <div className="container">
       <div className="loader">
