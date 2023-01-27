@@ -9,7 +9,7 @@ const Gaming = () => {
   const [loading, setLoading] = useState(true)
 
   const getItems = async () => {
-    const response = await axios.get('http://127.0.0.1:8000/api/v1/gaming')
+    const response = await axios.get('http://127.0.0.1:8000/gamings')
     try {
       setItems(response.data)
       setLoading(false)
