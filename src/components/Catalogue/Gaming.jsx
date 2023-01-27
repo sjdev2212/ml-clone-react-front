@@ -31,7 +31,7 @@ const Gaming = () => {
 
       <section className="box-group">
       {items.map((item) => (
-<Link to={`/details/${item.id}`} key={item.id} className='box'>
+<Link to={`/details/${item.param}/${item.id}`} key={item.id} className='box'>
             <div key={item.id} className='box'>
          <img src={item.image} alt="" />
             <h3>{item.shortdesc}</h3>

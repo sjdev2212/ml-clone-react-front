@@ -5,8 +5,7 @@ import ReactLoading from 'react-loading'
 import axios from 'axios'
 import {
   MDBCarousel,
-  MDBCarouselItem
-  ,
+  MDBCarouselItem,
   MDBCard,
   MDBCardBody,
   MDBCardTitle,
@@ -17,11 +16,11 @@ import {
 } from 'mdb-react-ui-kit'
 
 const Detail = () => {
-  const { id } = useParams()
+  const { param, id } = useParams()
   const [item, setItem] = useState([])
   const [loading, setLoading] = useState(true)
   const getItem = async () => {
-    const response = await axios.get(`http://127.0.0.1:8000/gamings/${id}`)
+    const response = await axios.get(`http://127.0.0.1:8000/${param}/${id}`)
     setTimeout(() => {
       setItem(response.data)
       setLoading(false)
