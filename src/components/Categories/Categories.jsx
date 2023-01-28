@@ -8,55 +8,55 @@ const Categories = () => {
     <section className="container-list">
       <ul className="categories-list">
         <li>
-          <Link to="/sports">
+          <Link to="categorie/sports">
           <p>Sports & Fitnes</p>
           { <MDBIcon className='inside ms-1' icon='camera' size='lg' />}
           </Link>
         </li>
         <li>
-          <Link to='/cars'>
+          <Link to='categorie/cars'>
           <p>Cars</p>
           { <MDBIcon className='inside ms-1' icon='camera' size='lg' />}
           </Link>
          </li>
         <li>
-          <Link to='/clothes'>
+          <Link to='categorie/clothes'>
         <p>Clothing</p>
         { <MDBIcon className='inside ms-1' icon='camera' size='lg' />}
         </Link>
         </li>
         <li>
-          <Link className='link' to='/gaming'>
+          <Link className='link' to='categorie/gamings'>
           <p>Videogames</p>
           { <MDBIcon className='inside ms-1' icon='camera' size='lg' />}
         </Link>
         </li>
         <li>
-          <Link to='/instruments'>
+          <Link to='categorie/instruments'>
           <p>Musical Istruments</p>
           { <MDBIcon className='inside ms-1' icon='camera' size='lg' />}
         </Link>
         </li>
         <li>
-          <Link to='/homegarden'>
+          <Link to='categorie/homegarden'>
           <p>Home & Garden</p>
           { <MDBIcon className='inside ms-1' icon='camera' size='lg' />}
         </Link>
         </li>
         <li>
-          <Link to='/cells'>
+          <Link to='categorie/cellphones'>
           <p>Cell phones</p>
           { <MDBIcon className='inside ms-1' icon='camera' size='lg' />}
         </Link>
         </li>
         <li>
-          <Link to='/electro'>
+          <Link to='categorie/electro'>
           <p>Electronics</p>
           { <MDBIcon className='inside ms-1' icon='camera' size='lg' />}
         </Link>
         </li>
         <li>
-          <Link to='/pets'>
+          <Link to='categorie/pets'>
           <p>Pets</p>
           { <MDBIcon className='inside ms-1' icon='camera' size='lg' />}
     </Link>

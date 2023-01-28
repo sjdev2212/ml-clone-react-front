@@ -42,7 +42,7 @@ const Detail = () => {
         className='w-100 d-block'
         itemId={1}
         src={item.image}
-        alt='...'
+        alt='images'
       />
       <MDBCarouselItem
         className='w-100 d-block'
