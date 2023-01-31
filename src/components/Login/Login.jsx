@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import PropTypes from 'prop-types'
 
-const Login = () => {
+const Login = ({ handleLogin }) => {
   const [showUser, setShowUser] = useState([])
   const [form, setForm] = useState({
     email: '',
@@ -32,6 +33,10 @@ const Login = () => {
       withCredentials: true
     }).then(response => {
       console.log('registration res', response)
+      if (response.data.status === 'created') {
+        console.log('registration res', response)
+        handleLogin(response.data)
+      }
     }
     ).catch(error => {
       console.log('registration error', error)
@@ -70,6 +75,9 @@ const Login = () => {
 
     </div>
   )
+}
+Login.propTypes = {
+  handleLogin: PropTypes.func.isRequired
 }
 
 export default Login
