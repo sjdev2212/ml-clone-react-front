@@ -17,7 +17,7 @@ const Home = ({ logged }) => {
 }
 
 Home.propTypes = {
-  logged: PropTypes.object.isRequired
+  logged: PropTypes.string
 }
 
 export default Home
