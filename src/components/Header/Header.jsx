@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 import './header.css'
 
-const Header = () => {
+const Header = ({ logged, logOut }) => {
   const linkNav = {
     color: 'whitesmoke',
     textDecoration: 'none',
@@ -25,13 +26,20 @@ const Header = () => {
           <Link style={linkNav} to='/cart'>Cart </Link>
           </li>
           <li>
-          <Link style={linkNav} to='/login'>Login  </Link>
+            {
+              logged.loggedInStatus === 'NOT_LOGGED_IN' ? <Link style={linkNav} to='/login' >Login </Link> : <Link style={linkNav} to='/login' onClick={() => logOut()}>Logout </Link>
+            }
+
            </li>
 
         </ul>
 
     </nav>
   )
+}
+Header.propTypes = {
+  logged: PropTypes.object,
+  logOut: PropTypes.func
 }
 
 export default Header
