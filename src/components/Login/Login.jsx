@@ -23,7 +23,7 @@ const Login = ({ handleLogin }) => {
       withCredentials: true
     }).then(response => {
       console.log('login res', response.data)
-      if (response.data.status === 401) {
+      if (response.data.status === 'logged_in') {
         console.log('login res', response)
         handleLogin(response.data)
       }
