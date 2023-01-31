@@ -7,14 +7,7 @@ import Login from './components/Login/Login'
 import Cart from './components/Cart/Cart'
 import About from './components/About/About'
 import Categorie from './components/Catalogue/Categorie'
-/* import Pets from './components/Catalogue/Pets'
-import Instruments from './components/Catalogue/Instruments'
-import HomeGarden from './components/Catalogue/HomeGarden'
-import Gaming from './components/Catalogue/Gaming'
-import Electro from './components/Catalogue/Electro'
-import Clothing from './components/Catalogue/Clothing'
-import Cellphones from './components/Catalogue/Cellphones'
-import Cars from './components/Catalogue/Cars' */
+import Register from './components/Register/Register'
 import Detail from './components/Catalogue/Detail'
 
 function App () {
@@ -41,6 +34,7 @@ function App () {
 
 <Route path="/" element={<Home logged={loggedIn.loggedInStatus}/>}/>
 <Route path="/login" element={<Login handleLogin={handleLogin}/>} />
+<Route path="/register" element={<Register handleRegister={handleLogin}/>} />
 <Route path="/cart" element={<Cart/>} />
 <Route path="/about" element={<About/>} />
 <Route path="/categorie/:param" element={<Categorie/>} />
