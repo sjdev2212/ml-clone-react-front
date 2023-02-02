@@ -60,7 +60,7 @@ const Login = ({ handleLogin }) => {
   )
 }
 Login.propTypes = {
-  handleLogin: PropTypes.func.isRequired
+  handleLogin: PropTypes.func
 }
 
 export default Login

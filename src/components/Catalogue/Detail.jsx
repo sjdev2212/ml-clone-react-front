@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import './detail.css'
 import ReactLoading from 'react-loading'
 import axios from 'axios'
@@ -70,7 +70,9 @@ const Detail = () => {
       <MDBCardBody>
         <MDBCardTitle>{item.name}</MDBCardTitle>
         <MDBCardText>{item.description}</MDBCardText>
+<Link to={`/cart/${item.param}/${item.id}`}>
         <MDBBtn color='success' href='#'>Add to cart</MDBBtn>
+</Link>
       </MDBCardBody>
       <MDBCardFooter className='text-muted'>2 days ago</MDBCardFooter>
     </MDBCard>

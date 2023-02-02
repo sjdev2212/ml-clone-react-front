@@ -70,7 +70,7 @@ function App () {
 <Route path="/login" element={<Login handleLogin={handleLogin}/>} />
 <Route path="/logout" element={<Login />} />
 <Route path="/register" element={<Register handleRegister={handleLogin}/>} />
-<Route path="/cart" element={<Cart/>} />
+<Route path="/cart/:param/:id" element={<Cart/>} />
 <Route path="/about" element={<About/>} />
 <Route path="/categorie/:param" element={<Categorie/>} />
 <Route path="/details/:param/:id" element={<Detail/>} />
